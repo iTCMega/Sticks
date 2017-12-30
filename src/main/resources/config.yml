@@ -1,0 +1,205 @@
+messages:
+  not_a_player: "Only players can run this command!"
+  no_permission: "&4You don't have permission for this command"
+  success: "&aSuccessfully received the STICK stick!"
+  inventory_title: "&4Sticks"
+sticks:
+  attack:
+    name: "&fAttack stick"
+    enabled:
+      recipe: true
+      usage: true
+  control:
+    name: "&fControl stick"
+    enabled:
+      recipe: true
+      usage: true
+  godmode:
+    name: "&fGodmode stick"
+    enabled:
+      recipe: true
+      usage: true
+  gravity:
+    name: "&fGravity stick"
+    enabled:
+      recipe: true
+      usage: true
+  growup:
+    name: "&fGrowup stick"
+    enabled:
+      recipe: true
+      usage: true
+  jump:
+    name: "&fJump stick"
+    enabled:
+      recipe: true
+      usage: true
+  kill:
+    name: "&fKill stick"
+    enabled:
+      recipe: true
+      usage: true
+  mount:
+    name: "&fMount stick"
+    enabled:
+      recipe: true
+      usage: true
+  pickup:
+    name: "&fPickup stick"
+    enabled:
+      recipe: true
+      usage: true
+  slime:
+    name: "&fSlime stick"
+    enabled:
+      recipe: true
+      usage: true
+  witch:
+    name: "&fWitch stick"
+    enabled:
+      recipe: true
+      usage: true
+recipes:
+  attack:
+    # First row
+    - AIR
+    - IRON_SWORD
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  control:
+    # First row
+    - AIR
+    - LEASH
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  godmode:
+    # First row
+    - AIR
+    - BEACON
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  gravity:
+    # First row
+    - AIR
+    - ELYTRA
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  growup:
+    # First row
+    - AIR
+    - BOOK
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  jump:
+    # First row
+    - AIR
+    - STICK
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  kill:
+    # First row
+    - AIR
+    - DIAMOND_SWORD
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  mount:
+    # First row
+    - AIR
+    - SADDLE
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  pickup:
+    # First row
+    - AIR
+    - HOPPER
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  slime:
+    # First row
+    - AIR
+    - SLIME_BALL
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  witch:
+    # First row
+    - AIR
+    - POTION
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR

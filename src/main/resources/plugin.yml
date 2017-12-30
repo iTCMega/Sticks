@@ -1,0 +1,54 @@
+name: Sticks
+version: ${project.version}
+main: io.github.gitgideon.sticks.Sticks
+authors: [GitGideon]
+description: A rewrite of the Sticks plugin
+commands:
+  attackstick:
+    usage: /attackstick
+    description: Get an attack stick
+    aliases: [attack, attacks, stickattack]
+  controlstick:
+    usage: /controlstick
+    description: Get a control stick
+    aliases: [control, control, stickcontrol]
+  godmodestick:
+    usage: /godmodestick
+    description: Get a godmode stick
+    aliases: [godmode, godmodes, gmodestick, gmode, stickgodmode]
+  gravitystick:
+    usage: /gravitystick
+    description: Get a gravity stick
+    aliases: [gravity, gravitys, stickgravity]
+  growupstick:
+    usage: /growupstick
+    description: Get a growup stick
+    aliases: [growup, growups, stickgrowup, growstick, agestick]
+  jumpstick:
+    usage: /jumpstick
+    description: Get a jump stick
+    aliases: [jump, jumps, stickjump]
+  killstick:
+    usage: /killstick
+    description: Get a kill stick
+    aliases: [kill, kills, stickkill, kstick]
+  mountstick:
+    usage: /mountstick
+    description: Get a mount stick
+    aliases: [mount, mounts, stickmount, mstick]
+  pickupstick:
+    usage: /pickupstick
+    description: Get a pickup stick
+    aliases: [pickup, pickups, stickpickup, pstick]
+  slimestick:
+    usage: /slimestick
+    description: Get a slime stick
+    aliases: [slime, slimes, stickslime, sstick]
+  witchstick:
+    usage: /witchstick
+    description: Get a witch stick
+    aliases: [witch, witchs, stickwitch, wstick]
+  sticks:
+    usage: /sticks
+    description: Open the sticks inventory
+    aliases: [stick, stickgui, guistick]
