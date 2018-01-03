@@ -14,11 +14,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public final class Sticks extends JavaPlugin {
 
-    private final HashMap<String, String> messages = new HashMap<>();
-    private final HashMap<String, ItemStack> sticks = new HashMap<>();
+    private final Map<String, String> messages = new HashMap<>();
+    private final Map<String, ItemStack> sticks = new HashMap<>();
 
     @Override
     public void onEnable() {
@@ -32,8 +33,29 @@ public final class Sticks extends JavaPlugin {
     }
 
     private void setupCommands() {
-        getConfig().getConfigurationSection("sticks").getKeys(false)
-                .forEach(key -> getCommand(key + "stick").setExecutor(new StickCommand(this, key)));
+        if (getConfig().getBoolean("sticks.attack.enabled.command"))
+            getCommand("attackstick").setExecutor(new StickCommand(this, "attack"));
+        if (getConfig().getBoolean("sticks.control.enabled.command"))
+            getCommand("controlstick").setExecutor(new StickCommand(this, "control"));
+        if (getConfig().getBoolean("sticks.godmode.enabled.command"))
+            getCommand("godmodestick").setExecutor(new StickCommand(this, "godmode"));
+        if (getConfig().getBoolean("sticks.gravity.enabled.command"))
+            getCommand("gravitystick").setExecutor(new StickCommand(this, "gravity"));
+        if (getConfig().getBoolean("sticks.growup.enabled.command"))
+            getCommand("growupstick").setExecutor(new StickCommand(this, "growup"));
+        if (getConfig().getBoolean("sticks.jump.enabled.command"))
+            getCommand("jumpstick").setExecutor(new StickCommand(this, "jump"));
+        if (getConfig().getBoolean("sticks.kill.enabled.command"))
+            getCommand("killstick").setExecutor(new StickCommand(this, "kill"));
+        if (getConfig().getBoolean("sticks.mount.enabled.command"))
+            getCommand("mountstick").setExecutor(new StickCommand(this, "mount"));
+        if (getConfig().getBoolean("sticks.pickup.enabled.command"))
+            getCommand("pickupstick").setExecutor(new StickCommand(this, "pickup"));
+        if (getConfig().getBoolean("sticks.slime.enabled.command"))
+            getCommand("slimestick").setExecutor(new StickCommand(this, "slime"));
+        if (getConfig().getBoolean("sticks.witch.enabled.command"))
+            getCommand("witchstick").setExecutor(new StickCommand(this, "witch"));
+
         getCommand("sticks").setExecutor(new StickGUICommand(this));
     }
 
@@ -108,11 +130,11 @@ public final class Sticks extends JavaPlugin {
         }
     }
 
-    public HashMap<String, ItemStack> getSticks() {
+    public Map<String, ItemStack> getSticks() {
         return sticks;
     }
 
-    public HashMap<String, String> getMessages() {
+    public Map<String, String> getMessages() {
         return messages;
     }
 

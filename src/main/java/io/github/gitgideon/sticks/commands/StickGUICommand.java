@@ -12,13 +12,12 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class StickGUICommand implements CommandExecutor, Listener {
 
-    private final HashMap<String, ItemStack> sticks;
-    private final HashMap<String, String> messages;
+    private final Map<String, ItemStack> sticks;
+    private final Map<String, String> messages;
     private final Sticks plugin;
     private final String inventoryTitle;
 
@@ -37,7 +36,7 @@ public class StickGUICommand implements CommandExecutor, Listener {
             return true;
         }
 
-        if (!sender.hasPermission("commands.gui")) {
+        if (!sender.hasPermission("sticks.gui")) {
             sender.sendMessage(messages.get("no_permission"));
             return true;
         }
@@ -49,7 +48,7 @@ public class StickGUICommand implements CommandExecutor, Listener {
             ItemStack stick = entry.getValue();
             if (p.hasPermission("sticks.gui." + key + "stick")) inventory.addItem(stick);
         }
-
+        
         if (inventory.firstEmpty() == 0) {
             sender.sendMessage(ChatColor.RED + "You don't have any sticks!");
             return true;

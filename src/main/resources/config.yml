@@ -9,56 +9,67 @@ sticks:
     enabled:
       recipe: true
       usage: true
+      command: true
   control:
     name: "&fControl stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   godmode:
     name: "&fGodmode stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   gravity:
     name: "&fGravity stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   growup:
     name: "&fGrowup stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   jump:
     name: "&fJump stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   kill:
     name: "&fKill stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   mount:
     name: "&fMount stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   pickup:
     name: "&fPickup stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   slime:
     name: "&fSlime stick"
     enabled:
       recipe: true
       usage: true
+      command: true
   witch:
     name: "&fWitch stick"
     enabled:
       recipe: true
       usage: true
+      command: true
 recipes:
   attack:
     # First row

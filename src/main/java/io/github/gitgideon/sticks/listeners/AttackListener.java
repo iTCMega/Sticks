@@ -7,16 +7,16 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractAtEntityEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.UUID;
 
 public class AttackListener implements Listener {
 
     private final ItemStack stick;
-    private final HashMap<UUID, Creature> pairs = new HashMap<>();
+    private final Map<UUID, Creature> pairs = new HashMap<>();
 
     public AttackListener(ItemStack stick) {
         this.stick = stick;

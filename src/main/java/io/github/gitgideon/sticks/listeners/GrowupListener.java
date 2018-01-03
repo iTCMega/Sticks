@@ -1,7 +1,6 @@
 package io.github.gitgideon.sticks.listeners;
 
 import org.bukkit.entity.Ageable;
-import org.bukkit.entity.Zombie;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerInteractAtEntityEvent;
