@@ -103,7 +103,10 @@ public final class Sticks extends JavaPlugin {
     }
 
     private void initializeRecipes() {
-        getConfig().getConfigurationSection("recipes").getKeys(false).forEach(key -> {
+        getConfig().getConfigurationSection("recipes").getKeys(false).stream()
+                .filter(sticks::containsKey)
+                .filter(key -> getConfig().contains("sticks." + key + ".enabled.recipe"))
+                .forEach(key -> {
             if (getConfig().getBoolean("sticks." + key + ".enabled.recipe"))
                 createRecipe(key, sticks.get(key));
         });
