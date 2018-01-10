@@ -44,6 +44,10 @@ commands:
     usage: /slimestick
     description: Get a slime stick
     aliases: [slime, slimes, stickslime, sstick]
+  teleportstick:
+    usage: /teleportstick
+    description: Get a teleport stick
+    aliases: [tpstick, teleportstick, stickteleport, tstick]
   witchstick:
     usage: /witchstick
     description: Get a witch stick
