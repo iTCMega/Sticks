@@ -29,13 +29,13 @@ public class StickCommand implements CommandExecutor {
             return true;
         }
 
-        if (!sender.hasPermission("sticks.commands." + name)) {
+        if (!sender.hasPermission("sticks.commands." + name + "stick")) {
             sender.sendMessage(messages.get("no_permission"));
             return true;
         }
 
         ((Player) sender).getInventory().addItem(stick);
-        sender.sendMessage(messages.get("success").replace("STICK", name));
+        sender.sendMessage(messages.get("success").replace("STICK", name + "stick"));
         return true;
     }
 }

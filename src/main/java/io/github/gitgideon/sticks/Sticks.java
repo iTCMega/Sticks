@@ -53,6 +53,8 @@ public final class Sticks extends JavaPlugin {
             getCommand("pickupstick").setExecutor(new StickCommand(this, "pickup"));
         if (getConfig().getBoolean("sticks.slime.enabled.command"))
             getCommand("slimestick").setExecutor(new StickCommand(this, "slime"));
+        if (getConfig().getBoolean("sticks.teleport.enabled.command"))
+            getCommand("teleportstick").setExecutor(new StickCommand(this, "teelport"));
         if (getConfig().getBoolean("sticks.witch.enabled.command"))
             getCommand("witchstick").setExecutor(new StickCommand(this, "witch"));
 
@@ -88,6 +90,8 @@ public final class Sticks extends JavaPlugin {
             pm.registerEvents(new GravityListener(sticks.get("gravity")), this);
         if (getConfig().getBoolean("sticks.growup.enabled.usage"))
             pm.registerEvents(new GrowupListener(sticks.get("growup")), this);
+        if (getConfig().getBoolean("sticks.jump.enabled.usage"))
+            pm.registerEvents(new JumpListener(sticks.get("jump")), this);
         if (getConfig().getBoolean("sticks.kill.enabled.usage"))
             pm.registerEvents(new KillListener(sticks.get("kill")), this);
         if (getConfig().getBoolean("sticks.mount.enabled.usage"))
@@ -96,10 +100,10 @@ public final class Sticks extends JavaPlugin {
             pm.registerEvents(new PickupListener(sticks.get("pickup")), this);
         if (getConfig().getBoolean("sticks.slime.enabled.usage"))
             pm.registerEvents(new SlimeListener(sticks.get("slime")), this);
+        if (getConfig().getBoolean("sticks.teleport.enabled.usage"))
+            pm.registerEvents(new TeleportListener(sticks.get("teleport"), this), this);
         if (getConfig().getBoolean("sticks.witch.enabled.usage"))
             pm.registerEvents(new WitchListener(sticks.get("witch")), this);
-        if (getConfig().getBoolean("sticks.jump.enabled.usage"))
-            pm.registerEvents(new JumpListener(sticks.get("jump")), this);
     }
 
     private void initializeRecipes() {

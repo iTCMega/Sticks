@@ -64,6 +64,13 @@ sticks:
       recipe: true
       usage: true
       command: true
+  teleport:
+    name: "&fTeleport stick"
+    range: 30
+    enabled:
+      recipe: true
+      usage: true
+      command: true
   witch:
     name: "&fWitch stick"
     enabled:
@@ -192,6 +199,19 @@ recipes:
     # First row
     - AIR
     - SLIME_BALL
+    - AIR
+    # Second row
+    - AIR
+    - WOOD
+    - AIR
+    # Third row
+    - AIR
+    - WOOD
+    - AIR
+  teleport:
+    # First row
+    - AIR
+    - ENDER_PEARL
     - AIR
     # Second row
     - AIR
