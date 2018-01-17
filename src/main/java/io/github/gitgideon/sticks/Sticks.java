@@ -54,7 +54,7 @@ public final class Sticks extends JavaPlugin {
         if (getConfig().getBoolean("sticks.slime.enabled.command"))
             getCommand("slimestick").setExecutor(new StickCommand(this, "slime"));
         if (getConfig().getBoolean("sticks.teleport.enabled.command"))
-            getCommand("teleportstick").setExecutor(new StickCommand(this, "teelport"));
+            getCommand("teleportstick").setExecutor(new StickCommand(this, "teleport"));
         if (getConfig().getBoolean("sticks.witch.enabled.command"))
             getCommand("witchstick").setExecutor(new StickCommand(this, "witch"));
 
